@@ -1,4 +1,4 @@
-namespace autenticacao.service.Repository
+namespace autenticacao.infra.Repository
 {
     public class RepoAuth : IRepoAuth
     {
@@ -8,9 +8,8 @@ namespace autenticacao.service.Repository
         readonly IjwtManager _jwtManager;
         readonly IChaveManager _chaveManager;
         readonly IRefreshManager _refreshManager;
-        readonly DataContext _db;
-        readonly Logger.Logger _logger;
-        public RepoAuth(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager, IjwtManager jwtManager, IChaveManager chaveManager, IRefreshManager refreshManager, DataContext db)
+
+        public RepoAuth(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager, IjwtManager jwtManager, IChaveManager chaveManager, IRefreshManager refreshManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -18,10 +17,9 @@ namespace autenticacao.service.Repository
             _jwtManager = jwtManager;
             _chaveManager = chaveManager;
             _refreshManager = refreshManager;
-            _db = db;
         }
 
-        public RepoAuth(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager, IjwtManager jwtManager, IChaveManager chaveManager, IRefreshManager refreshManager, DataContext db, Logger.Logger logger)
+        public RepoAuth(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager, IjwtManager jwtManager, IChaveManager chaveManager, IRefreshManager refreshManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -29,7 +27,6 @@ namespace autenticacao.service.Repository
             _jwtManager = jwtManager;
             _chaveManager = chaveManager;
             _refreshManager = refreshManager;
-            _db = db;
             _logger = logger;
         }
 

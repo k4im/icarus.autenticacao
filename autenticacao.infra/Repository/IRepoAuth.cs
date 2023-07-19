@@ -1,4 +1,4 @@
-namespace autenticacao.service.Repository
+namespace autenticacao.infra.Repository
 {
     public interface IRepoAuth
     {
