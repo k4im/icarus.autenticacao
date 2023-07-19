@@ -1,4 +1,4 @@
-namespace autenticacao.service.Logger
+namespace autenticacao.infra.Log
 {
     public class Logger
     {

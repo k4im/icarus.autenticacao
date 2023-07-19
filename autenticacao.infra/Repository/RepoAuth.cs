@@ -19,16 +19,6 @@ namespace autenticacao.infra.Repository
             _refreshManager = refreshManager;
         }
 
-        public RepoAuth(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager, IjwtManager jwtManager, IChaveManager chaveManager, IRefreshManager refreshManager)
-        {
-            _userManager = userManager;
-            _signInManager = signInManager;
-            _roleManager = roleManager;
-            _jwtManager = jwtManager;
-            _chaveManager = chaveManager;
-            _refreshManager = refreshManager;
-        }
-
         public async Task<bool> desativarUsuario(string chave)
         {
             var usuario = await _userManager.FindByEmailAsync(chave);

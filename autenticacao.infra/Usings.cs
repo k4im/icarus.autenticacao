@@ -11,3 +11,8 @@ global using System.IdentityModel.Tokens.Jwt;
 global using System.Text;
 global using Microsoft.IdentityModel.Tokens;
 global using autenticacao.infra.Jwt;
+global using autenticacao.infra.Key;
+global using autenticacao.infra.RefreshToken;
+global using Serilog;
+global using Serilog.Sinks.Graylog;
+

@@ -1,26 +1,25 @@
 global using System;
-global using System.Linq;
 global using System.Threading.Tasks;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.AspNetCore.Identity;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.AspNetCore.Authorization;
-global using autenticacao.service.chaveManager;
 global using System.Security.Claims;
 global using System.Text;
 global using Microsoft.IdentityModel.Tokens;
-global using autenticacao.service.RefreshManagers;
 global using Microsoft.AspNetCore.Authentication.JwtBearer;
-global using AutoMapper;
 global using Microsoft.OpenApi.Models;
 global using System.Reflection;
 global using Swashbuckle.AspNetCore.Filters;
-global using Serilog;
-global using Serilog.Sinks.Graylog;
-global using autenticacao.service.Logger;
+
+/*Usings atribuidos aos dominios*/
 global using autenticacao.domain.Dtos;
 global using autenticacao.domain.Entity;
-global using autenticacao.domain.Tokens;
+
+/*Usings atribuidos a parte de infra*/
 global using autenticacao.infra.Data;
 global using autenticacao.infra.Repository;
 global using autenticacao.infra.Jwt;
+global using autenticacao.infra.Key;
+global using autenticacao.infra.RefreshToken;
+global using autenticacao.infra.Log;

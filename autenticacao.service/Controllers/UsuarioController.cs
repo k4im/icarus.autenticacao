@@ -7,13 +7,12 @@ namespace autenticacao.service.Controllers
     {
         readonly IRepoAuth _repoAuth;
         readonly IRefreshManager _refreshManager;
-        readonly Logger.Logger _logger;
 
-        public UsuarioController(IRepoAuth repoAuth, IRefreshManager refreshManager, Logger.Logger logger = null)
+
+        public UsuarioController(IRepoAuth repoAuth, IRefreshManager refreshManager)
         {
             _repoAuth = repoAuth;
             _refreshManager = refreshManager;
-            _logger = logger;
         }
 
         /// <summary>
@@ -35,10 +34,8 @@ namespace autenticacao.service.Controllers
             var usuarios = await _repoAuth.listarUsuarios(pagina, resultado);
             if (usuarios == null)
             {
-                _logger.logarAviso($"Não existem usuarios criados. Requirido por: [{currentUser}]");
                 return StatusCode(404);
             }
-            _logger.logarInfo($"Retornado lista de usuarios. Ação feita por: [{currentUser}]");
             return StatusCode(200, usuarios);
         }
 
@@ -65,7 +62,6 @@ namespace autenticacao.service.Controllers
             var currentUser = HttpContext.User.FindFirstValue(ClaimTypes.Name);
             if (!ModelState.IsValid)
             {
-                _logger.logarErro($"Não foi possivel criar o usuario, [Modelo Invalido]. Requirido por: [{currentUser}]");
                 return BadRequest(ModelState);
             }
             try
@@ -73,15 +69,12 @@ namespace autenticacao.service.Controllers
                 var result = await _repoAuth.registrarUsuario(user);
                 if (result == null)
                 {
-                    _logger.logarAviso($"Não foi possivel criar o usuario. Requirido por: [{currentUser}]");
                     return StatusCode(500, "Algo deu errado!");
                 }
-                _logger.logarInfo($"Realizado criação do usuario, chave: [{result.ChaveDeAcesso}]. Ação feita por: [{currentUser}]");
                 return StatusCode(200, result);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                _logger.logarErro(e.Message);
                 return StatusCode(500, "Algo deu errado!");
             }
         }
@@ -104,10 +97,8 @@ namespace autenticacao.service.Controllers
             var result = await _repoAuth.desativarUsuario(chave);
             if (result)
             {
-                _logger.logarInfo($"Realizado desativação do usuario: [{chave}]. Ação feita por: [{currentUser}]");
                 return StatusCode(200, "Usuario desativado com sucesso!");
             }
-            _logger.logarAviso($"Não foi possivel desativar o usuario: [{chave}]");
             return StatusCode(500, "Não foi possivel desativar o usuario");
         }
 
@@ -137,15 +128,12 @@ namespace autenticacao.service.Controllers
                 var result = await _repoAuth.logar(login);
                 if (result == null)
                 {
-                    _logger.logarAviso($"Não foi encontado o usuario");
                     return NotFound();
                 }
-                _logger.logarInfo($"Realizado o login do usuario: {login.ChaveDeAcesso}");
                 return StatusCode(200, result);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                _logger.logarErro($"Não foi possivel logar o usuario: [{login.ChaveDeAcesso}] - {e.Message}");
                 return StatusCode(500, "Algo deu errado!");
             }
         }
@@ -176,7 +164,6 @@ namespace autenticacao.service.Controllers
             var result = await _repoAuth.reativarUsuario(chave);
             if (result)
             {
-                _logger.logarInfo($"Realizado reativação do usuario: [{chave}]. Ação feita por: [{currentUser}]");
                 return StatusCode(200, "Usuario reativado com sucesso!");
             }
             return StatusCode(500, "Não foi possivel desativar o usuario");

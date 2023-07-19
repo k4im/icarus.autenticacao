@@ -1,4 +1,4 @@
-namespace autenticacao.service.chaveManager
+namespace autenticacao.infra.Key
 {
     public interface IChaveManager
     {
