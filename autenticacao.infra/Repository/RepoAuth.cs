@@ -8,8 +8,14 @@ namespace autenticacao.infra.Repository
         readonly IjwtManager _jwtManager;
         readonly IChaveManager _chaveManager;
         readonly IRefreshManager _refreshManager;
-
-        public RepoAuth(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager, IjwtManager jwtManager, IChaveManager chaveManager, IRefreshManager refreshManager)
+        readonly DataContext _db;
+        public RepoAuth(UserManager<AppUser> userManager,
+        SignInManager<AppUser> signInManager,
+        RoleManager<IdentityRole> roleManager,
+        IjwtManager jwtManager,
+        IChaveManager chaveManager,
+        IRefreshManager refreshManager,
+        DataContext db)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -17,6 +23,7 @@ namespace autenticacao.infra.Repository
             _jwtManager = jwtManager;
             _chaveManager = chaveManager;
             _refreshManager = refreshManager;
+            _db = db;
         }
 
         public async Task<bool> desativarUsuario(string chave)
@@ -26,11 +33,10 @@ namespace autenticacao.infra.Repository
             usuario.desativarUsuario();
             try
             {
-                using (var db = new DataContext(new DbContextOptionsBuilder().UseInMemoryDatabase("Data").Options))
-                {
-                    await db.SaveChangesAsync();
-                    return true;
-                }
+
+                await _db.SaveChangesAsync();
+                return true;
+
             }
             catch (Exception)
             {
@@ -40,16 +46,15 @@ namespace autenticacao.infra.Repository
 
         public async Task<Response<AppUser>> listarUsuarios(int pagina, float resultado)
         {
-            using (var db = new DataContext(new DbContextOptionsBuilder().UseInMemoryDatabase("Data").Options))
-            {
-                var resultadoPaginas = resultado;
-                var pessoas = await db.Users.ToListAsync();
-                var totalDePaginas = Math.Ceiling(pessoas.Count() / resultadoPaginas);
-                var usersPaginados = pessoas.Skip((pagina - 1) * (int)resultadoPaginas).Take((int)resultadoPaginas).ToList();
-                var paginasTotal = (int)totalDePaginas;
-                return new Response<AppUser>(usersPaginados, pagina, paginasTotal);
-            }
+
+            var resultadoPaginas = resultado;
+            var pessoas = await _db.Users.ToListAsync();
+            var totalDePaginas = Math.Ceiling(pessoas.Count() / resultadoPaginas);
+            var usersPaginados = pessoas.Skip((pagina - 1) * (int)resultadoPaginas).Take((int)resultadoPaginas).ToList();
+            var paginasTotal = (int)totalDePaginas;
+            return new Response<AppUser>(usersPaginados, pagina, paginasTotal);
         }
+
 
         public async Task<ResponseLoginDTO> logar(LoginDTO loginModel)
         {
@@ -80,11 +85,8 @@ namespace autenticacao.infra.Repository
             usuario.reativarUsuario();
             try
             {
-                using (var db = new DataContext(new DbContextOptionsBuilder().UseInMemoryDatabase("Data").Options))
-                {
-                    await db.SaveChangesAsync();
-                    return true;
-                }
+                await _db.SaveChangesAsync();
+                return true;
             }
             catch (Exception)
             {

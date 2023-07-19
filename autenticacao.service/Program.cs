@@ -39,6 +39,7 @@ builder.Services.AddSwaggerGen(option =>
 });
 builder.Services.AddSwaggerExamplesFromAssemblies(Assembly.GetEntryAssembly());
 #endregion
+builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Data"));
 builder.Services.AddScoped<IRepoAuth, RepoAuth>();
 builder.Services.AddScoped<IRefreshManager, RefreshManager>();
 builder.Services.AddScoped<IChaveManager, ChaveManager>();

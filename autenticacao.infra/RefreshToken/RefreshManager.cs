@@ -6,33 +6,35 @@ namespace autenticacao.infra.RefreshToken
 
     public class RefreshManager : IRefreshManager
     {
+        readonly DataContext _db;
+
+        public RefreshManager(DataContext db)
+            => _db = db;
         public async Task<autenticacao.domain.Tokens.RefreshToken> BuscarRefreshToken(string chave, string refreshToken)
         {
-            using (var db = new DataContext(new DbContextOptionsBuilder().UseInMemoryDatabase("Data").Options))
-            {
-                var item = await db.RTokens.FirstOrDefaultAsync(x => x.Usuario == chave);
-                if (item == null) Results.NotFound("Não existe um refresh token para esse usuario");
-                var RToken = new autenticacao.domain.Tokens.RefreshToken(item.RToken, item.Usuario, item.DataCriacao, item.DataExpiracao);
-                return RToken;
-            }
+
+            var item = await _db.RTokens.FirstOrDefaultAsync(x => x.Usuario == chave);
+            if (item == null) Results.NotFound("Não existe um refresh token para esse usuario");
+            var RToken = new autenticacao.domain.Tokens.RefreshToken(item.RToken, item.Usuario, item.DataCriacao, item.DataExpiracao);
+            return RToken;
+
         }
         public async Task<bool> DeletarRefreshToken(string token)
         {
-            using (var db = new DataContext(new DbContextOptionsBuilder().UseInMemoryDatabase("Data").Options))
+
+            var refreshToken = await _db.RTokens.FirstOrDefaultAsync(x => x.RToken == token);
+            if (refreshToken == null) Results.NotFound();
+            try
             {
-                var refreshToken = await db.RTokens.FirstOrDefaultAsync(x => x.RToken == token);
-                if (refreshToken == null) Results.NotFound();
-                try
-                {
-                    db.RTokens.Remove(refreshToken);
-                    await db.SaveChangesAsync();
-                    return true;
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
+                _db.RTokens.Remove(refreshToken);
+                await _db.SaveChangesAsync();
+                return true;
             }
+            catch (Exception)
+            {
+                return false;
+            }
+
         }
 
         public autenticacao.domain.Tokens.RefreshToken GerarRefreshToken(string ChaveDeAcesso)
