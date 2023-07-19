@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OEJ9Ig5hYVfTdz2L8nLmm5U+i59dxZ57jvuY3ERnsOLyoXnTpURZq6W2gmcE9Ipn0yzk4vdKZws2gWKZWjycGA==",
+  "dgSpecHash": "Xn3pCHHtjsfQTyUi4eeh+LaAT3I7MS3WhTWLtOie0KYCF15goBqyqVazxEQL3PCydiac4rcvIGmGThBi8zNieQ==",
   "success": false,
   "projectFilePath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.service.tests/autenticacao.service.tests.csproj",
   "expectedPackageFiles": [
@@ -14,17 +14,17 @@
     "/home/oem/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
     "/home/oem/.nuget/packages/dapper.contrib/2.0.78/dapper.contrib.2.0.78.nupkg.sha512",
     "/home/oem/.nuget/packages/fare/2.1.1/fare.2.1.1.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.5/microsoft.aspnetcore.authentication.jwtbearer.7.0.5.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.5/microsoft.aspnetcore.cryptography.internal.7.0.5.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.5/microsoft.aspnetcore.cryptography.keyderivation.7.0.5.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/7.0.4/microsoft.aspnetcore.identity.entityframeworkcore.7.0.4.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.9/microsoft.aspnetcore.authentication.jwtbearer.7.0.9.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.9/microsoft.aspnetcore.cryptography.internal.7.0.9.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.9/microsoft.aspnetcore.cryptography.keyderivation.7.0.9.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/7.0.9/microsoft.aspnetcore.identity.entityframeworkcore.7.0.9.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.aspnetcore.openapi/7.0.3/microsoft.aspnetcore.openapi.7.0.3.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.codecoverage/17.3.2/microsoft.codecoverage.17.3.2.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.entityframeworkcore/7.0.5/microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.5/microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.5/microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.inmemory/7.0.5/microsoft.entityframeworkcore.inmemory.7.0.5.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.entityframeworkcore/7.0.9/microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.9/microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.9/microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.inmemory/7.0.9/microsoft.entityframeworkcore.inmemory.7.0.9.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.5/microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
@@ -36,8 +36,8 @@
     "/home/oem/.nuget/packages/microsoft.extensions.dependencymodel/7.0.0/microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.fileproviders.abstractions/7.0.0/microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.hosting.abstractions/7.0.0/microsoft.extensions.hosting.abstractions.7.0.0.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.extensions.identity.core/7.0.5/microsoft.extensions.identity.core.7.0.5.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.extensions.identity.stores/7.0.4/microsoft.extensions.identity.stores.7.0.4.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.identity.core/7.0.9/microsoft.extensions.identity.core.7.0.9.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.identity.stores/7.0.9/microsoft.extensions.identity.stores.7.0.9.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",
@@ -174,8 +174,8 @@
     {
       "code": "NU1605",
       "level": "Error",
-      "message": "Detected package downgrade: Microsoft.AspNetCore.Authentication.JwtBearer from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.domain -> Microsoft.AspNetCore.Authentication.JwtBearer (>= 7.0.9) \n autenticacao.service.tests -> autenticacao.service -> Microsoft.AspNetCore.Authentication.JwtBearer (>= 7.0.5)",
-      "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore.Relational from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.domain -> Microsoft.AspNetCore.Identity.EntityFrameworkCore 7.0.9 -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.9) \n autenticacao.service.tests -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.5)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
       "targetGraphs": [
         "net7.0"
       ]
@@ -183,44 +183,8 @@
     {
       "code": "NU1605",
       "level": "Error",
-      "message": "Detected package downgrade: Microsoft.AspNetCore.Identity.EntityFrameworkCore from 7.0.9 to 7.0.4. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.domain -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 7.0.9) \n autenticacao.service.tests -> autenticacao.service -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 7.0.4)",
-      "libraryId": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.domain -> Microsoft.EntityFrameworkCore (>= 7.0.9) \n autenticacao.service.tests -> autenticacao.service -> Microsoft.EntityFrameworkCore (>= 7.0.5)",
-      "libraryId": "Microsoft.EntityFrameworkCore",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.AspNetCore.Authentication.JwtBearer from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.infra -> Microsoft.AspNetCore.Authentication.JwtBearer (>= 7.0.9) \n autenticacao.service.tests -> autenticacao.service -> Microsoft.AspNetCore.Authentication.JwtBearer (>= 7.0.5)",
-      "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.AspNetCore.Identity.EntityFrameworkCore from 7.0.9 to 7.0.4. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.infra -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 7.0.9) \n autenticacao.service.tests -> autenticacao.service -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 7.0.4)",
-      "libraryId": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.infra -> Microsoft.EntityFrameworkCore (>= 7.0.9) \n autenticacao.service.tests -> autenticacao.service -> Microsoft.EntityFrameworkCore (>= 7.0.5)",
-      "libraryId": "Microsoft.EntityFrameworkCore",
+      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore.Relational from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.infra -> Microsoft.AspNetCore.Identity.EntityFrameworkCore 7.0.9 -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.9) \n autenticacao.service.tests -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.5)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
       "targetGraphs": [
         "net7.0"
       ]

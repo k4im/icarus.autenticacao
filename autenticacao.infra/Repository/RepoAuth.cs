@@ -27,7 +27,6 @@ namespace autenticacao.infra.Repository
             _jwtManager = jwtManager;
             _chaveManager = chaveManager;
             _refreshManager = refreshManager;
-            _logger = logger;
         }
 
         public async Task<bool> desativarUsuario(string chave)
@@ -37,24 +36,29 @@ namespace autenticacao.infra.Repository
             usuario.desativarUsuario();
             try
             {
-                await _db.SaveChangesAsync();
-                return true;
+                using (var db = new DataContext(new DbContextOptionsBuilder().UseInMemoryDatabase("Data").Options))
+                {
+                    await db.SaveChangesAsync();
+                    return true;
+                }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                _logger.logarErro($"Não foi possivel realizar a desativação do usuario: {e.Message}");
                 return false;
             }
         }
 
         public async Task<Response<AppUser>> listarUsuarios(int pagina, float resultado)
         {
-            var resultadoPaginas = resultado;
-            var pessoas = await _db.Users.ToListAsync();
-            var totalDePaginas = Math.Ceiling(pessoas.Count() / resultadoPaginas);
-            var usersPaginados = pessoas.Skip((pagina - 1) * (int)resultadoPaginas).Take((int)resultadoPaginas).ToList();
-            var paginasTotal = (int)totalDePaginas;
-            return new Response<AppUser>(usersPaginados, pagina, paginasTotal);
+            using (var db = new DataContext(new DbContextOptionsBuilder().UseInMemoryDatabase("Data").Options))
+            {
+                var resultadoPaginas = resultado;
+                var pessoas = await db.Users.ToListAsync();
+                var totalDePaginas = Math.Ceiling(pessoas.Count() / resultadoPaginas);
+                var usersPaginados = pessoas.Skip((pagina - 1) * (int)resultadoPaginas).Take((int)resultadoPaginas).ToList();
+                var paginasTotal = (int)totalDePaginas;
+                return new Response<AppUser>(usersPaginados, pagina, paginasTotal);
+            }
         }
 
         public async Task<ResponseLoginDTO> logar(LoginDTO loginModel)
@@ -71,7 +75,6 @@ namespace autenticacao.infra.Repository
                     return new ResponseLoginDTO(token, RToken.Token);
                 }
             }
-            _logger.logarAviso($"Não foi possivel realizar o login do usuario: {loginModel.ChaveDeAcesso}");
             return new ResponseLoginDTO("Senha ou usuario invalidos!", "Senha ou usuario invalidos!");
         }
 
@@ -87,12 +90,14 @@ namespace autenticacao.infra.Repository
             usuario.reativarUsuario();
             try
             {
-                await _db.SaveChangesAsync();
-                return true;
+                using (var db = new DataContext(new DbContextOptionsBuilder().UseInMemoryDatabase("Data").Options))
+                {
+                    await db.SaveChangesAsync();
+                    return true;
+                }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                _logger.logarErro($"Não foi possivel reativar o usuario com chave - {chave}: {e.Message}");
                 return false;
             }
         }
@@ -121,10 +126,8 @@ namespace autenticacao.infra.Repository
             {
                 foreach (var erro in result.Errors)
                 {
-                    _logger.logarErro($"Não foi possivel criar o usuario: {erro.Description}");
                 }
             }
-            _logger.logarInfo($"Criado novo usuario: [{NovoUsuario.UserName}]");
             return new ResponseRegistroDTO(chave);
         }
 

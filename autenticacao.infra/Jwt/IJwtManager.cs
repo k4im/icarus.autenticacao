@@ -1,4 +1,4 @@
-namespace autenticacao.service.jwtManager
+namespace autenticacao.infra.Jwt
 {
     public interface IjwtManager
     {

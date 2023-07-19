@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cS4zhEFPfyxpZHafhJ3QHnKdTAXuFahDIjE29MrX9fVbfrKgGrAE9KBXHrJOUXOgmYZS73fprrXWQeUs7+/R/A==",
+  "dgSpecHash": "AnWiN6dVFSc7wxcnXXCTccJPtU6DNk96e+BGl2uZbhIiYQSNWYQyUjyh5qwd8yN99k4xCsKJgGqF2181NGs24Q==",
   "success": true,
   "projectFilePath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj",
   "expectedPackageFiles": [
@@ -12,9 +12,11 @@
     "/home/oem/.nuget/packages/microsoft.entityframeworkcore/7.0.9/microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.9/microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.9/microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.inmemory/7.0.9/microsoft.entityframeworkcore.inmemory.7.0.9.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.9/microsoft.entityframeworkcore.relational.7.0.9.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.configuration/7.0.0/microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
