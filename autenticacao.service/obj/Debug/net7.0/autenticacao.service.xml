@@ -4,97 +4,6 @@
         <name>autenticacao.service</name>
     </assembly>
     <members>
-        <member name="M:autenticacao.service.Controllers.PessoaControllers.buscarPessoas(System.Int32,System.Single)">
-            <summary>
-            Retorna uma lista paginada de Pessoas.
-            </summary>
-        </member>
-        <member name="M:autenticacao.service.Controllers.PessoaControllers.buscarPessoa(System.Int32)">
-            <summary>
-            Ira retornar uma pessoa a partir de um ID.
-            </summary>
-            <param name="id"></param>
-            <returns code="200">Retorna a pessoa pertencente ao id</returns>
-            <returns code="404">Informa que não existe uma pessoa com tal ID</returns>
-        </member>
-        <member name="M:autenticacao.service.Controllers.PessoaControllers.adicionarPessoa(autenticacao.service.Models.Pessoa)">
-             <summary>
-             Cria uma nova pessoa.
-             </summary>
-             <remarks>
-             Exemplo:
-            
-                 {
-                   "nome": {
-                     "primeiroNome": "Roger",
-                     "sobreNome": "Yakubets"
-                   },
-                   "endereco": {
-                     "cidade": "Lagoas",
-                     "bairro": "Riveira",
-                     "rua": "Manoel Antonio Siqueira",
-                     "cep": "8852513",
-                     "numero": 254
-                   },
-                   "telefone": {
-                     "codigoPais": "55",
-                     "codigoDeArea": "48",
-                     "numero": "99542365"
-                   },
-                   "cpf": {
-                     "cpf": "01234567891"
-                   }
-                 }
-            
-             </remarks>
-             <returns>Codigo 200 dizendo que o usuario foi criado com sucesso!</returns>
-             <response code="200">Retorna uma mensagem informando que foi criado com sucesso</response>
-             <response code="500">Retorna uma mensagem informando que não foi possivel criar o usuario, erro interno</response>
-             <response code="400">Retorna uma mensagem informando que não foi possivel criar o usuario, argumento invalido</response>
-        </member>
-        <member name="M:autenticacao.service.Controllers.PessoaControllers.atualizarPessoaEndereco(System.Int32,autenticacao.service.Models.ValueObjects.Endereco)">
-             <summary>
-             Atualiza o endereço de uma pessoa.
-             </summary>
-             <remarks>
-             
-             Exemplo:
-                 
-                 {
-                   "cidade": "Palhoça",
-                   "bairro": "Bela Vista",
-                   "rua": "Fernando Medeiros",
-                   "cep": "885523840",
-                   "numero": 2544
-                 }
-            
-             </remarks>
-             <response code="200">Retorna a pessoa com o dado atualizado</response>
-             <response code="404">Retorna dado de pessoa não encontrada</response>
-             <response code="400">Informa que não foi possivel atualizar devido a erro de model</response>
-        </member>
-        <member name="M:autenticacao.service.Controllers.PessoaControllers.atualizarTelefone(System.Int32,autenticacao.service.Models.ValueObjects.Telefone)">
-             <summary>
-             Atualiza o telefone de uma pessoa.
-             </summary>
-             <remarks>
-             Exemplo:
-                 
-                 {
-                   "codigoPais": "55",
-                   "codigoDeArea": "11",
-                   "numero": "84563368"
-                 }
-            
-             </remarks>
-             <response code="200">Retorna a pessoa com o dado atualizado</response>
-             <response code="404">Retorna dado de pessoa não encontrada</response>
-        </member>
-        <member name="M:autenticacao.service.Controllers.PessoaControllers.deletarPessoa(System.Int32)">
-            <summary>
-            Ira realizar a removeção de uma pessoa a partir de um ID.
-            </summary>
-        </member>
         <member name="M:autenticacao.service.Controllers.UsuarioController.buscarUsuarios(System.Int32,System.Single)">
             <summary>
             Retorna a lista de usuarios de forma paginada.
@@ -107,7 +16,7 @@
             <returns code="401">Informa que não está autorizado para a funcao</returns>
             <returns code="403">Informa que não tem privilégios para a funcao</returns>
         </member>
-        <member name="M:autenticacao.service.Controllers.UsuarioController.criarUsuario(autenticacao.service.Models.UserController.NovoUsuarioDTO)">
+        <member name="M:autenticacao.service.Controllers.UsuarioController.criarUsuario(autenticacao.domain.Dtos.NovoUsuarioDTO)">
             <summary>
             Cria novo usuario.
             </summary>
@@ -137,7 +46,7 @@
             <returns code="401">Informa que não está autorizado para a funcao</returns>
             <returns code="403">Informa que não tem privilégios para a funcao</returns>
         </member>
-        <member name="M:autenticacao.service.Controllers.UsuarioController.login(autenticacao.service.Models.UserController.LoginDTO)">
+        <member name="M:autenticacao.service.Controllers.UsuarioController.login(autenticacao.domain.Dtos.LoginDTO)">
              <summary>
              Realizar login.
              </summary>
@@ -169,18 +78,6 @@
             <returns code="500">Informa que não foi possivel realizar a operação</returns>
             <returns code="401">Informa que não está autorizado para a funcao</returns>
             <returns code="403">Informa que não tem privilégios para a funcao</returns>
-        </member>
-        <member name="T:autenticacao.service.Migrations.Users">
-            <inheritdoc />
-        </member>
-        <member name="M:autenticacao.service.Migrations.Users.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:autenticacao.service.Migrations.Users.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:autenticacao.service.Migrations.Users.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
         </member>
     </members>
 </doc>

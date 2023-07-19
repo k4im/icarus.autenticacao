@@ -1,0 +1,15 @@
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/bin/Debug/net7.0/autenticacao.infra.deps.json
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/bin/Debug/net7.0/autenticacao.infra.dll
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/bin/Debug/net7.0/autenticacao.infra.pdb
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/bin/Debug/net7.0/autenticacao.domain.dll
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/bin/Debug/net7.0/autenticacao.domain.pdb
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/autenticacao.infra.csproj.AssemblyReference.cache
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/autenticacao.infra.GeneratedMSBuildEditorConfig.editorconfig
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/autenticacao.infra.AssemblyInfoInputs.cache
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/autenticacao.infra.AssemblyInfo.cs
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/autenticacao.infra.csproj.CoreCompileInputs.cache
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/autenticacao.infra.csproj.CopyComplete
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/autenticacao.infra.dll
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/refint/autenticacao.infra.dll
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/autenticacao.infra.pdb
+/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/ref/autenticacao.infra.dll
