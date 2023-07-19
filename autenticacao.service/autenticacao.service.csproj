@@ -34,4 +34,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.6" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.30.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\autenticacao.domain\autenticacao.domain.csproj" />
+    <ProjectReference Include="..\autenticacao.infra\autenticacao.infra.csproj" />
+  </ItemGroup>
 </Project>
