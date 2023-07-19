@@ -1,5 +1,6 @@
-namespace autenticacao.service.Data
+namespace autenticacao.infra.Data
 {
+
     public class DataContext : IdentityDbContext<AppUser>
     {
         public DataContext(DbContextOptions options) : base(options)
