@@ -1,4 +1,4 @@
-namespace autenticacao.service.Models.UserController
+namespace autenticacao.domain.Dtos
 {
     public class ResponseLoginDTO
     {
@@ -8,13 +8,13 @@ namespace autenticacao.service.Models.UserController
             RefrehsToken = validarToken(refrehsToken);
         }
 
-        public string AccessToken { get;}
-        public string RefrehsToken { get;}
+        public string AccessToken { get; }
+        public string RefrehsToken { get; }
 
 
         string validarToken(string token)
         {
-            if(string.IsNullOrEmpty(token)) throw new Exception("Token não pode estar vazio!");
+            if (string.IsNullOrEmpty(token)) throw new Exception("Token não pode estar vazio!");
             return token;
         }
     }

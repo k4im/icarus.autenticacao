@@ -1,15 +1,15 @@
-namespace autenticacao.service.Models.Tokens
+namespace autenticacao.domain.Tokens
 {
     public class RefreshToken : TokenEntity
     {
         public RefreshToken(string token) : base(token)
-        {}
+        { }
         public RefreshToken(string token, string usuario) : base(token)
         {
             Usuario = usuario;
         }
 
-        public RefreshToken(string token, string usuario, DateTime dataCriacao, DateTime dataExpiracao) : 
+        public RefreshToken(string token, string usuario, DateTime dataCriacao, DateTime dataExpiracao) :
         base(token, dataCriacao, dataExpiracao)
         {
             Usuario = usuario;

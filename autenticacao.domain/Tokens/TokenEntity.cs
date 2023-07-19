@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace autenticacao.service.Models.Tokens
+namespace autenticacao.domain.Tokens
 {
     public class TokenEntity
     {
@@ -22,17 +17,17 @@ namespace autenticacao.service.Models.Tokens
         }
 
         [DataType("NVARCHAR")]
-        public string Token { get;}
-        
+        public string Token { get; }
+
         [DataType("DATETIME")]
-        public DateTime DataDeCriacao { get;}
-        
+        public DateTime DataDeCriacao { get; }
+
         [DataType("DATETIME")]
-        public DateTime DataDeExpiracao { get;}
+        public DateTime DataDeExpiracao { get; }
 
         public bool tokenExpirado()
         {
-            if(this.DataDeExpiracao < DateTime.UtcNow) return true;
+            if (this.DataDeExpiracao < DateTime.UtcNow) return true;
             return false;
         }
     }

@@ -1,4 +1,4 @@
-namespace autenticacao.service.Models.UserController
+namespace autenticacao.domain.Dtos
 {
     public class NovoUsuarioDTO
     {
@@ -8,8 +8,8 @@ namespace autenticacao.service.Models.UserController
             Papel = papel;
             Nome = nome;
         }
-        public string Nome { get;}
-        public string Senha { get;}
-        public string Papel { get;}
+        public string Nome { get; }
+        public string Senha { get; }
+        public string Papel { get; }
     }
 }

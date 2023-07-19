@@ -1,4 +1,4 @@
-namespace autenticacao.service.Models.UserController
+namespace autenticacao.domain.Dtos
 {
     public class LoginDTO
     {
@@ -8,7 +8,7 @@ namespace autenticacao.service.Models.UserController
             Senha = senha;
         }
 
-        public string ChaveDeAcesso { get;}  
-        public string Senha { get;}  
+        public string ChaveDeAcesso { get; }
+        public string Senha { get; }
     }
 }

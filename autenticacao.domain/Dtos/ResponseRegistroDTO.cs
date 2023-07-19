@@ -1,4 +1,4 @@
-namespace autenticacao.service.Models.UserController
+namespace autenticacao.domain.Dtos
 {
     public class ResponseRegistroDTO
     {
@@ -7,11 +7,11 @@ namespace autenticacao.service.Models.UserController
             ChaveDeAcesso = validarChave(chaveDeAcesso);
         }
 
-        public string ChaveDeAcesso { get;}
+        public string ChaveDeAcesso { get; }
 
         string validarChave(string chave)
         {
-            if(string.IsNullOrEmpty(chave)) throw new Exception("Chave não pode estar vazia");
+            if (string.IsNullOrEmpty(chave)) throw new Exception("Chave não pode estar vazia");
             return chave;
         }
     }
