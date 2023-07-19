@@ -3029,6 +3029,36 @@
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
       },
+      "autenticacao.domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.9",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore": "7.0.9"
+        },
+        "compile": {
+          "bin/placeholder/autenticacao.domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/autenticacao.domain.dll": {}
+        }
+      },
+      "autenticacao.infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.9",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore": "7.0.9"
+        },
+        "compile": {
+          "bin/placeholder/autenticacao.infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/autenticacao.infra.dll": {}
+        }
+      },
       "autenticacao.service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3052,7 +3082,9 @@
           "Serilog.Sinks.Graylog": "3.0.1",
           "Swashbuckle.AspNetCore": "6.4.0",
           "Swashbuckle.AspNetCore.Filters": "7.0.6",
-          "System.IdentityModel.Tokens.Jwt": "6.30.1"
+          "System.IdentityModel.Tokens.Jwt": "6.30.1",
+          "autenticacao.domain": "1.0.0",
+          "autenticacao.infra": "1.0.0"
         },
         "compile": {
           "bin/placeholder/autenticacao.service.dll": {}
@@ -9433,6 +9465,16 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "autenticacao.domain/1.0.0": {
+      "type": "project",
+      "path": "../autenticacao.domain/autenticacao.domain.csproj",
+      "msbuildProject": "../autenticacao.domain/autenticacao.domain.csproj"
+    },
+    "autenticacao.infra/1.0.0": {
+      "type": "project",
+      "path": "../autenticacao.infra/autenticacao.infra.csproj",
+      "msbuildProject": "../autenticacao.infra/autenticacao.infra.csproj"
+    },
     "autenticacao.service/1.0.0": {
       "type": "project",
       "path": "../autenticacao.service/autenticacao.service.csproj",
@@ -9458,19 +9500,19 @@
     ]
   },
   "packageFolders": {
-    "/home/k4im/.nuget/packages/": {}
+    "/home/oem/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/k4im/github/gestao/app/Services/autenticacao/autenticacao.service.tests/autenticacao.service.tests.csproj",
+      "projectUniqueName": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.service.tests/autenticacao.service.tests.csproj",
       "projectName": "autenticacao.service.tests",
-      "projectPath": "/home/k4im/github/gestao/app/Services/autenticacao/autenticacao.service.tests/autenticacao.service.tests.csproj",
-      "packagesPath": "/home/k4im/.nuget/packages/",
-      "outputPath": "/home/k4im/github/gestao/app/Services/autenticacao/autenticacao.service.tests/obj/",
+      "projectPath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.service.tests/autenticacao.service.tests.csproj",
+      "packagesPath": "/home/oem/.nuget/packages/",
+      "outputPath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.service.tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/k4im/.nuget/NuGet/NuGet.Config"
+        "/home/oem/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -9482,8 +9524,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/k4im/github/gestao/app/Services/autenticacao/autenticacao.service/autenticacao.service.csproj": {
-              "projectPath": "/home/k4im/github/gestao/app/Services/autenticacao/autenticacao.service/autenticacao.service.csproj"
+            "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj": {
+              "projectPath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj"
             }
           }
         }
@@ -9566,19 +9608,69 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.7, 7.0.7]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.107/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.AspNetCore.Authentication.JwtBearer from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.domain -> Microsoft.AspNetCore.Authentication.JwtBearer (>= 7.0.9) \n autenticacao.service.tests -> autenticacao.service -> Microsoft.AspNetCore.Authentication.JwtBearer (>= 7.0.5)",
+      "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.AspNetCore.Identity.EntityFrameworkCore from 7.0.9 to 7.0.4. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.domain -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 7.0.9) \n autenticacao.service.tests -> autenticacao.service -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 7.0.4)",
+      "libraryId": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.domain -> Microsoft.EntityFrameworkCore (>= 7.0.9) \n autenticacao.service.tests -> autenticacao.service -> Microsoft.EntityFrameworkCore (>= 7.0.5)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.AspNetCore.Authentication.JwtBearer from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.infra -> Microsoft.AspNetCore.Authentication.JwtBearer (>= 7.0.9) \n autenticacao.service.tests -> autenticacao.service -> Microsoft.AspNetCore.Authentication.JwtBearer (>= 7.0.5)",
+      "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.AspNetCore.Identity.EntityFrameworkCore from 7.0.9 to 7.0.4. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.infra -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 7.0.9) \n autenticacao.service.tests -> autenticacao.service -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 7.0.4)",
+      "libraryId": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.infra -> Microsoft.EntityFrameworkCore (>= 7.0.9) \n autenticacao.service.tests -> autenticacao.service -> Microsoft.EntityFrameworkCore (>= 7.0.5)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }
