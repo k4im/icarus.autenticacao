@@ -11,6 +11,7 @@ global using Microsoft.AspNetCore.Authentication.JwtBearer;
 global using Microsoft.OpenApi.Models;
 global using System.Reflection;
 global using Swashbuckle.AspNetCore.Filters;
+global using autenticacao.service.Extensions;
 
 /*Usings atribuidos aos dominios*/
 global using autenticacao.domain.Dtos;
