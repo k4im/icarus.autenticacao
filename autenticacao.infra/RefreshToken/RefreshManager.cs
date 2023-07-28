@@ -51,7 +51,7 @@ namespace autenticacao.infra.RefreshToken
 
         public async Task<bool> SalvarRefreshToken(autenticacao.domain.Tokens.RefreshToken request)
         {
-            using (var db = new DataContext(new DbContextOptionsBuilder().UseInMemoryDatabase("Data").Options))
+            using (var db = new DataContext())
             {
                 var tokenConvertido = new RefreshTokenTable
                 {

@@ -8,7 +8,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerConfiguration();
 
 builder.Services.AddDependencies();
-builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Data"));
+builder.Services.AddDbContext<DataContext>();
 builder.Services.AddPasswordConfiguration();
 builder.Services.AddIdentityConfiguration();
 builder.Services.AddJwtConfiguration(builder.Configuration);

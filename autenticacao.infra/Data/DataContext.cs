@@ -3,7 +3,7 @@ namespace autenticacao.infra.Data
 
     public class DataContext : IdentityDbContext<AppUser>
     {
-        public DataContext(DbContextOptions options) : base(options)
+        public DataContext() : base(new DbContextOptionsBuilder().UseInMemoryDatabase("Data").Options)
         { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
