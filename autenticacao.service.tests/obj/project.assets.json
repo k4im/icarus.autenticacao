@@ -316,10 +316,10 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
+      "Microsoft.EntityFrameworkCore.Relational/7.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore": "7.0.9",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
         },
         "compile": {
@@ -377,6 +377,26 @@
         },
         "runtime": {
           "lib/net7.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Primitives": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Configuration.dll": {
             "related": ".xml"
           }
         },
@@ -1199,6 +1219,22 @@
           }
         }
       },
+      "RabbitMQ.Client/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -1546,11 +1582,8 @@
           }
         }
       },
-      "Serilog.Sinks.Graylog/3.0.1": {
+      "Serilog.Sinks.Graylog/3.0.2": {
         "type": "package",
-        "dependencies": {
-          "Serilog": "2.12.0"
-        },
         "compile": {
           "lib/net7.0/Serilog.Sinks.Graylog.Core.dll": {},
           "lib/net7.0/Serilog.Sinks.Graylog.dll": {}
@@ -1565,6 +1598,38 @@
             "codeLanguage": "any",
             "copyToOutput": false
           }
+        }
+      },
+      "Serilog.Sinks.PeriodicBatching/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.0.0",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Threading.Timer": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Serilog.Sinks.RabbitMQ/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "RabbitMQ.Client": "6.0.0",
+          "Serilog": "2.8.0",
+          "Serilog.Sinks.PeriodicBatching": "2.1.1"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/Serilog.Sinks.RabbitMQ.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Serilog.Sinks.RabbitMQ.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/6.4.0": {
@@ -2183,6 +2248,15 @@
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
         }
       },
       "System.Net.Http/4.3.0": {
@@ -3052,6 +3126,12 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore.InMemory": "7.0.9",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Serilog": "3.0.1",
+          "Serilog.AspNetCore": "7.0.0",
+          "Serilog.Extensions.Hosting": "7.0.0",
+          "Serilog.Sinks.Graylog": "3.0.2",
+          "Serilog.Sinks.RabbitMQ": "6.0.0",
           "autenticacao.domain": "1.0.0"
         },
         "compile": {
@@ -3076,7 +3156,6 @@
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Extensions.Hosting": "7.0.0",
           "Serilog.Sinks.Console": "4.1.0",
-          "Serilog.Sinks.Graylog": "3.0.1",
           "Swashbuckle.AspNetCore": "6.4.0",
           "Swashbuckle.AspNetCore.Filters": "7.0.6",
           "System.IdentityModel.Tokens.Jwt": "6.30.1",
@@ -3580,17 +3659,17 @@
         "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
-      "sha512": "u/33DC4S6g2hpMPgBc5Kdnlz//nqHR5c/ovgjtiP/wQ7sOd0EOdygVzUJAAOxCwbtAHDsJXS9Vc3jLFYq0yu8Q==",
+    "Microsoft.EntityFrameworkCore.Relational/7.0.9": {
+      "sha512": "u7iN6cNd6SJUlpdk24JVIbkji/UbkEEQ7pXncTyT4eXXj+Hz2y4NSZFOAywPGcioIgX1YzbKWDiJhk7hjSFxBQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/7.0.5",
+      "path": "microsoft.entityframeworkcore.relational/7.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.7.0.9.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
@@ -3876,6 +3955,33 @@
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
         "microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration/7.0.0": {
+      "sha512": "tldQUBWt/xeH2K7/hMPPo5g8zuLc3Ro9I5d4o/XrxvxOCA2EZBtW7bCHHTc49fcBtvB8tLAb/Qsmfrq+2SJ4vA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Configuration.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.targets",
+        "lib/net462/Microsoft.Extensions.Configuration.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.xml",
+        "lib/net6.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net6.0/Microsoft.Extensions.Configuration.xml",
+        "lib/net7.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net7.0/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -5109,6 +5215,25 @@
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
+    "RabbitMQ.Client/6.0.0": {
+      "sha512": "8e7KK44Fai72F452GF8KxUAW5t+ik3rUcalpQaxQNv6DxZyQTgVioWfyYSGYF6qpUqDdy7ZmvD3Zgkm7pKNR9w==",
+      "type": "package",
+      "path": "rabbitmq.client/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/net461/RabbitMQ.Client.dll",
+        "lib/net461/RabbitMQ.Client.pdb",
+        "lib/net461/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.pdb",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.6.0.0.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
+    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "sha512": "HdSSp5MnJSsg08KMfZThpuLPJpPwE5hBXvHwoKWosyHHfe8Mh5WKT0ylEOf6yNzX6Ngjxe4Whkafh5q7Ymac4Q==",
       "type": "package",
@@ -5553,10 +5678,10 @@
         "serilog.sinks.file.nuspec"
       ]
     },
-    "Serilog.Sinks.Graylog/3.0.1": {
-      "sha512": "RUairGR9YGz7eIoOSo7BmGhsfk/ITKMr1U+k0Z3IZb9CH2Hz1LFgAwt8iwJq4T+bvg2Fk6mdyNGkirg5s8uT0A==",
+    "Serilog.Sinks.Graylog/3.0.2": {
+      "sha512": "i+xa+nCWCqP0Ld6T8NJXAF+/jUts5qlzF0YdGbFTDYVRnQl3EAQ03jNRkT82vD22nizjVASXtGAVAnHFypCB7Q==",
       "type": "package",
-      "path": "serilog.sinks.graylog/3.0.1",
+      "path": "serilog.sinks.graylog/3.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5571,8 +5696,39 @@
         "lib/netstandard2.0/Serilog.Sinks.Graylog.Core.dll",
         "lib/netstandard2.0/Serilog.Sinks.Graylog.dll",
         "serilog-sink-nuget.png",
-        "serilog.sinks.graylog.3.0.1.nupkg.sha512",
+        "serilog.sinks.graylog.3.0.2.nupkg.sha512",
         "serilog.sinks.graylog.nuspec"
+      ]
+    },
+    "Serilog.Sinks.PeriodicBatching/2.1.1": {
+      "sha512": "L1iZtcEzQdEIYCPvhYJYB2RofPg+i1NhHJfS+DpXLyLSMS6OXebqaI1fxWhmJRIjD9D9BuXi23FkZTQDiP7cHw==",
+      "type": "package",
+      "path": "serilog.sinks.periodicbatching/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/net45/Serilog.Sinks.PeriodicBatching.xml",
+        "lib/netstandard1.1/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/netstandard1.1/Serilog.Sinks.PeriodicBatching.xml",
+        "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.xml",
+        "serilog.sinks.periodicbatching.2.1.1.nupkg.sha512",
+        "serilog.sinks.periodicbatching.nuspec"
+      ]
+    },
+    "Serilog.Sinks.RabbitMQ/6.0.0": {
+      "sha512": "M8SGYpfvoQ09gSxcoFHuUyeny4bMtMHopWs/y0umbx2EJlf3gEQiAQREsmBdVSXZnSYdgQh131JM6TB2eZlF+Q==",
+      "type": "package",
+      "path": "serilog.sinks.rabbitmq/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/Serilog.Sinks.RabbitMQ.dll",
+        "lib/netcoreapp2.0/Serilog.Sinks.RabbitMQ.dll",
+        "lib/netstandard2.0/Serilog.Sinks.RabbitMQ.dll",
+        "serilog.sinks.rabbitmq.6.0.0.nupkg.sha512",
+        "serilog.sinks.rabbitmq.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/6.4.0": {
@@ -7171,6 +7327,29 @@
         "runtimes/aot/lib/netcore50/System.Linq.Expressions.dll",
         "system.linq.expressions.4.3.0.nupkg.sha512",
         "system.linq.expressions.nuspec"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Net.Http/4.3.0": {
@@ -9484,8 +9663,6 @@
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Autofac.Extras.Moq >= 6.1.0",
-      "Microsoft.EntityFrameworkCore.InMemory >= 7.0.9",
-      "Microsoft.EntityFrameworkCore.Relational >= 7.0.5",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "Moq >= 4.18.4",
       "Moq.EntityFrameworkCore >= 7.0.0.2",
@@ -9497,19 +9674,19 @@
     ]
   },
   "packageFolders": {
-    "/home/oem/.nuget/packages/": {}
+    "/home/joao/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.service.tests/autenticacao.service.tests.csproj",
+      "projectUniqueName": "/home/joao/github/icarus.autenticacao/autenticacao.service.tests/autenticacao.service.tests.csproj",
       "projectName": "autenticacao.service.tests",
-      "projectPath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.service.tests/autenticacao.service.tests.csproj",
-      "packagesPath": "/home/oem/.nuget/packages/",
-      "outputPath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.service.tests/obj/",
+      "projectPath": "/home/joao/github/icarus.autenticacao/autenticacao.service.tests/autenticacao.service.tests.csproj",
+      "packagesPath": "/home/joao/.nuget/packages/",
+      "outputPath": "/home/joao/github/icarus.autenticacao/autenticacao.service.tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/oem/.nuget/NuGet/NuGet.Config"
+        "/home/joao/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -9521,8 +9698,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj": {
-              "projectPath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj"
+            "/home/joao/github/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj": {
+              "projectPath": "/home/joao/github/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj"
             }
           }
         }
@@ -9552,14 +9729,6 @@
           "Autofac.Extras.Moq": {
             "target": "Package",
             "version": "[6.1.0, )"
-          },
-          "Microsoft.EntityFrameworkCore.InMemory": {
-            "target": "Package",
-            "version": "[7.0.9, )"
-          },
-          "Microsoft.EntityFrameworkCore.Relational": {
-            "target": "Package",
-            "version": "[7.0.5, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -9610,28 +9779,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore.Relational from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.domain -> Microsoft.AspNetCore.Identity.EntityFrameworkCore 7.0.9 -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.9) \n autenticacao.service.tests -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.5)",
-      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore.Relational from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \n autenticacao.service.tests -> autenticacao.service -> autenticacao.infra -> Microsoft.AspNetCore.Identity.EntityFrameworkCore 7.0.9 -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.9) \n autenticacao.service.tests -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.5)",
-      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  }
 }

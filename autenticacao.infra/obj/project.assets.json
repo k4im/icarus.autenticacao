@@ -3473,19 +3473,19 @@
     ]
   },
   "packageFolders": {
-    "/home/oem/.nuget/packages/": {}
+    "/home/joao/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj",
+      "projectUniqueName": "/home/joao/github/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj",
       "projectName": "autenticacao.infra",
-      "projectPath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj",
-      "packagesPath": "/home/oem/.nuget/packages/",
-      "outputPath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/",
+      "projectPath": "/home/joao/github/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj",
+      "packagesPath": "/home/joao/.nuget/packages/",
+      "outputPath": "/home/joao/github/icarus.autenticacao/autenticacao.infra/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/oem/.nuget/NuGet/NuGet.Config"
+        "/home/joao/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -3497,8 +3497,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj": {
-              "projectPath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj"
+            "/home/joao/github/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj": {
+              "projectPath": "/home/joao/github/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj"
             }
           }
         }
@@ -3570,7 +3570,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj": {}
+    "/home/joao/github/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj": {}
   },
   "projects": {
-    "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj": {
+    "/home/joao/github/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj",
+        "projectUniqueName": "/home/joao/github/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj",
         "projectName": "autenticacao.domain",
-        "projectPath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj",
-        "packagesPath": "/home/oem/.nuget/packages/",
-        "outputPath": "/home/oem/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/obj/",
+        "projectPath": "/home/joao/github/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/github/icarus.autenticacao/autenticacao.domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/oem/.nuget/NuGet/NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -67,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
         }
       }
     }
