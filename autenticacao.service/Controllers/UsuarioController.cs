@@ -1,7 +1,7 @@
 namespace autenticacao.service.Controllers
 {
     [ApiController]
-    [Route("api/v0.1/[controller]")]
+    [Route("api/usuarios")]
 
     public class UsuarioController : ControllerBase
     {
@@ -25,7 +25,7 @@ namespace autenticacao.service.Controllers
         /// <returns code="404">Informa que não existe uma lista de usuario</returns>
         /// <returns code="401">Informa que não está autorizado para a funcao</returns>
         /// <returns code="403">Informa que não tem privilégios para a funcao</returns>
-        [HttpGet("usuarios/{pagina?}/{resultado?}")]
+        [HttpGet("{pagina?}/{resultado?}")]
         // [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> buscarUsuarios(int pagina = 1, float resultado = 5)
         {
@@ -55,7 +55,7 @@ namespace autenticacao.service.Controllers
         /// <response code="500">Retorna que algo deu errado</response>
         /// <returns code="401">Informa que não está autorizado para a funcao</returns>
         /// <returns code="403">Informa que não tem privilégios para a funcao</returns>
-        [HttpPost("usuarios/novo")]
+        [HttpPost("novo")]
         [AllowAnonymous]
         public async Task<IActionResult> criarUsuario(NovoUsuarioDTO user)
         {
@@ -89,7 +89,7 @@ namespace autenticacao.service.Controllers
         /// <returns code="500">Informa que não foi possivel realizar a operação</returns>
         /// <returns code="401">Informa que não está autorizado para a funcao</returns>
         /// <returns code="403">Informa que não tem privilégios para a funcao</returns>
-        [HttpPost("usuarios/desativar/{chave}")]
+        [HttpPost("desativar/{chave}")]
         // [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> desativarUsuario([FromRoute] string chave)
         {
@@ -118,7 +118,7 @@ namespace autenticacao.service.Controllers
         /// <response code="500">Retorna que algo deu errado</response>
         /// <returns code="401">Informa que não está autorizado para a funcao</returns>
         /// <returns code="403">Informa que não tem privilégios para a funcao</returns>
-        [HttpPost("usuarios/login")]
+        [HttpPost("login")]
         [AllowAnonymous]
         public async Task<IActionResult> login(LoginDTO login)
         {
@@ -142,7 +142,7 @@ namespace autenticacao.service.Controllers
         /// Ira realizar o LogOut do usuario que está atualmente conectado
         /// </summary>
         /// <returns code="200">Informa que o usuario conseguiu se desconectar</returns>
-        [HttpPost("usuarios/logout")]
+        [HttpPost("logout")]
         public async Task<IActionResult> logOut()
         {
             await _repoAuth.logOut();
@@ -156,7 +156,7 @@ namespace autenticacao.service.Controllers
         /// <returns code="500">Informa que não foi possivel realizar a operação</returns>
         /// <returns code="401">Informa que não está autorizado para a funcao</returns>
         /// <returns code="403">Informa que não tem privilégios para a funcao</returns>
-        [HttpPost("usuarios/reativar/{chave}")]
+        [HttpPost("reativar/{chave}")]
         // [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> reavitarUsuario([FromRoute] string chave)
         {
