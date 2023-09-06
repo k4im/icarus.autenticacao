@@ -1439,6 +1439,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore.InMemory": "7.0.9",
           "Microsoft.Extensions.Configuration": "7.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
           "Serilog": "3.0.1",
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Extensions.Hosting": "7.0.0",
@@ -4491,7 +4492,6 @@
       "Dapper.Contrib >= 2.0.78",
       "Microsoft.AspNetCore.OpenApi >= 7.0.3",
       "Moq.EntityFrameworkCore >= 7.0.0.2",
-      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0",
       "Serilog >= 3.0.1",
       "Serilog.AspNetCore >= 7.0.0",
       "Serilog.Extensions.Hosting >= 7.0.0",
@@ -4570,10 +4570,6 @@
           "Moq.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.0.2, )"
-          },
-          "Pomelo.EntityFrameworkCore.MySql": {
-            "target": "Package",
-            "version": "[7.0.0, )"
           },
           "Serilog": {
             "target": "Package",

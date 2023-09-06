@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "20M9iSg+s8SQu5d2hEyqjWVB9Ac+dpLEutjtPgpztPe4KSJTbRxiVLtgE+OohwnoC9c5FYoy+XOrn8NLPljYPw==",
+  "dgSpecHash": "j0kq3Y+u1HgmBMMZLFEQjnSFe0ZYwf4X0Qrhq0Ut76+3gbcTxnQGlKJYk8rjAUn+93JR/Okj5clhnobb1ABtZg==",
   "success": true,
   "projectFilePath": "/home/joao/github/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,8 @@
     "/home/joao/.nuget/packages/microsoft.identitymodel.tokens/6.15.1/microsoft.identitymodel.tokens.6.15.1.nupkg.sha512",
     "/home/joao/.nuget/packages/microsoft.netcore.platforms/1.0.1/microsoft.netcore.platforms.1.0.1.nupkg.sha512",
     "/home/joao/.nuget/packages/microsoft.netcore.targets/1.0.1/microsoft.netcore.targets.1.0.1.nupkg.sha512",
+    "/home/joao/.nuget/packages/mysqlconnector/2.2.5/mysqlconnector.2.2.5.nupkg.sha512",
+    "/home/joao/.nuget/packages/pomelo.entityframeworkcore.mysql/7.0.0/pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "/home/joao/.nuget/packages/rabbitmq.client/6.0.0/rabbitmq.client.6.0.0.nupkg.sha512",
     "/home/joao/.nuget/packages/serilog/3.0.1/serilog.3.0.1.nupkg.sha512",
     "/home/joao/.nuget/packages/serilog.aspnetcore/7.0.0/serilog.aspnetcore.7.0.0.nupkg.sha512",

@@ -129,6 +129,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Serilog": {
               "target": "Package",
               "version": "[3.0.1, )"
@@ -234,10 +238,6 @@
             "Moq.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.0.2, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             },
             "Serilog": {
               "target": "Package",
