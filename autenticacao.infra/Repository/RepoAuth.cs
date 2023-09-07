@@ -1,3 +1,6 @@
+using Dapper;
+using MySqlConnector;
+
 namespace autenticacao.infra.Repository
 {
     public class RepoAuth : IRepoAuth
@@ -9,6 +12,7 @@ namespace autenticacao.infra.Repository
         readonly IChaveManager _chaveManager;
         readonly IRefreshManager _refreshManager;
         readonly DataContext _db;
+        readonly string Connection = Environment.GetEnvironmentVariable("DB_CONNECTION");
         public RepoAuth(UserManager<AppUser> userManager,
         SignInManager<AppUser> signInManager,
         RoleManager<IdentityRole> roleManager,
@@ -46,13 +50,15 @@ namespace autenticacao.infra.Repository
 
         public async Task<Response<AppUser>> listarUsuarios(int pagina, float resultado)
         {
+            var queryPaginado = "SELECT Id, Nome, Status, DataInicio, DataEntrega, Valor FROM Projetos LIMIT @resultado OFFSET @pagina";
+            var queryTotal = "SELECT COUNT(*) FROM Projetos";
 
-            var resultadoPaginas = resultado;
-            var pessoas = await _db.Users.ToListAsync();
-            var totalDePaginas = Math.Ceiling(pessoas.Count() / resultadoPaginas);
-            var usersPaginados = pessoas.Skip((pagina - 1) * (int)resultadoPaginas).Take((int)resultadoPaginas).ToList();
-            var paginasTotal = (int)totalDePaginas;
-            return new Response<AppUser>(usersPaginados, pagina, paginasTotal);
+            using var connection = new MySqlConnection(Connection);
+            var totalItems = await connection.ExecuteScalarAsync<int>(queryTotal);
+            var total = Math.Ceiling(totalItems / resultado);
+            var projetosPaginados = await connection
+                .QueryAsync<AppUser>(queryPaginado, new { resultado = resultado, pagina = (pagina - 1) * resultado });
+            return new Response<AppUser>(projetosPaginados.ToList(), pagina, (int)total, totalItems);
         }
 
 

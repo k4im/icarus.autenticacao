@@ -104,7 +104,7 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
-      "Dapper/2.0.123": {
+      "Dapper/2.0.151": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {
@@ -298,22 +298,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/_._": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.InMemory/7.0.9": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.9"
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/7.0.9": {
@@ -3122,10 +3106,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Dapper": "2.0.151",
+          "Dapper.Contrib": "2.0.78",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.9",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore": "7.0.9",
-          "Microsoft.EntityFrameworkCore.InMemory": "7.0.9",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
           "Serilog": "3.0.1",
@@ -3148,8 +3133,6 @@
         "dependencies": {
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "Dapper": "2.0.123",
-          "Dapper.Contrib": "2.0.78",
           "Microsoft.AspNetCore.OpenApi": "7.0.3",
           "Moq.EntityFrameworkCore": "7.0.0.2",
           "Serilog": "3.0.1",
@@ -3336,15 +3319,15 @@
         "coverlet.collector.nuspec"
       ]
     },
-    "Dapper/2.0.123": {
-      "sha512": "RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+    "Dapper/2.0.151": {
+      "sha512": "mMcZgx1lim0/i1Ozu+lgnBM4GwNIHpCuxV6BV2ovsEfZAXRAq4jb6RIhxGDcVjtmXMLPpdp85jHPdDjBMMwejw==",
       "type": "package",
-      "path": "dapper/2.0.123",
+      "path": "dapper/2.0.151",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Dapper.png",
-        "dapper.2.0.123.nupkg.sha512",
+        "dapper.2.0.151.nupkg.sha512",
         "dapper.nuspec",
         "lib/net461/Dapper.dll",
         "lib/net461/Dapper.xml",
@@ -3643,20 +3626,6 @@
         "lib/netstandard2.0/_._",
         "microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.InMemory/7.0.9": {
-      "sha512": "I8Vv9Qj8WVetEh2xfNZRMaCliHQT2fScepvDHTV4lgEs4GKqvBhBKv45RvSdfjSHvg7GI48JQbSeWz0IblAxSQ==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.inmemory/7.0.9",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.xml",
-        "microsoft.entityframeworkcore.inmemory.7.0.9.nupkg.sha512",
-        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/7.0.9": {
@@ -9674,19 +9643,19 @@
     ]
   },
   "packageFolders": {
-    "/home/joao/.nuget/packages/": {}
+    "C:\\Users\\santo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/joao/github/icarus.autenticacao/autenticacao.service.tests/autenticacao.service.tests.csproj",
+      "projectUniqueName": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service.tests\\autenticacao.service.tests.csproj",
       "projectName": "autenticacao.service.tests",
-      "projectPath": "/home/joao/github/icarus.autenticacao/autenticacao.service.tests/autenticacao.service.tests.csproj",
-      "packagesPath": "/home/joao/.nuget/packages/",
-      "outputPath": "/home/joao/github/icarus.autenticacao/autenticacao.service.tests/obj/",
+      "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service.tests\\autenticacao.service.tests.csproj",
+      "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service.tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/joao/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -9698,8 +9667,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/joao/github/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj": {
-              "projectPath": "/home/joao/github/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj"
+            "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\autenticacao.service.csproj": {
+              "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\autenticacao.service.csproj"
             }
           }
         }
@@ -9779,7 +9748,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

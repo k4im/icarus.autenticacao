@@ -22,3 +22,15 @@
 /home/joao/github/icarus.autenticacao/autenticacao.domain/obj/Debug/net7.0/refint/autenticacao.domain.dll
 /home/joao/github/icarus.autenticacao/autenticacao.domain/obj/Debug/net7.0/autenticacao.domain.pdb
 /home/joao/github/icarus.autenticacao/autenticacao.domain/obj/Debug/net7.0/ref/autenticacao.domain.dll
+C:\Users\santo\github\icarus-sistema\icarus.autenticacao\autenticacao.domain\bin\Debug\net7.0\autenticacao.domain.deps.json
+C:\Users\santo\github\icarus-sistema\icarus.autenticacao\autenticacao.domain\bin\Debug\net7.0\autenticacao.domain.dll
+C:\Users\santo\github\icarus-sistema\icarus.autenticacao\autenticacao.domain\bin\Debug\net7.0\autenticacao.domain.pdb
+C:\Users\santo\github\icarus-sistema\icarus.autenticacao\autenticacao.domain\obj\Debug\net7.0\autenticacao.domain.csproj.AssemblyReference.cache
+C:\Users\santo\github\icarus-sistema\icarus.autenticacao\autenticacao.domain\obj\Debug\net7.0\autenticacao.domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\santo\github\icarus-sistema\icarus.autenticacao\autenticacao.domain\obj\Debug\net7.0\autenticacao.domain.AssemblyInfoInputs.cache
+C:\Users\santo\github\icarus-sistema\icarus.autenticacao\autenticacao.domain\obj\Debug\net7.0\autenticacao.domain.AssemblyInfo.cs
+C:\Users\santo\github\icarus-sistema\icarus.autenticacao\autenticacao.domain\obj\Debug\net7.0\autenticacao.domain.csproj.CoreCompileInputs.cache
+C:\Users\santo\github\icarus-sistema\icarus.autenticacao\autenticacao.domain\obj\Debug\net7.0\autenticacao.domain.dll
+C:\Users\santo\github\icarus-sistema\icarus.autenticacao\autenticacao.domain\obj\Debug\net7.0\refint\autenticacao.domain.dll
+C:\Users\santo\github\icarus-sistema\icarus.autenticacao\autenticacao.domain\obj\Debug\net7.0\autenticacao.domain.pdb
+C:\Users\santo\github\icarus-sistema\icarus.autenticacao\autenticacao.domain\obj\Debug\net7.0\ref\autenticacao.domain.dll
