@@ -49,7 +49,7 @@ namespace autenticacao.infra.Repository
 
         public async Task<Response<UserDTO>> listarUsuarios(int pagina, float resultado)
         {
-            var queryPaginado = "SELECT Id, UserName, Email, FlagDesativado, Valor FROM AspNetUsers LIMIT @resultado OFFSET @pagina";
+            var queryPaginado = "SELECT Id, UserName, Email, FlagDesativado FROM AspNetUsers LIMIT @resultado OFFSET @pagina";
             var queryTotal = "SELECT COUNT(*) FROM AspNetUsers";
 
             using var connection = new MySqlConnection(Connection);
