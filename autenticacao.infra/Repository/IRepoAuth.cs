@@ -2,7 +2,7 @@ namespace autenticacao.infra.Repository
 {
     public interface IRepoAuth
     {
-        Task<Response<AppUser>> listarUsuarios(int pagina, float resultado);
+        Task<Response<UserDTO>> listarUsuarios(int pagina, float resultado);
         Task<ResponseRegistroDTO> registrarUsuario(NovoUsuarioDTO user);
         Task<bool> desativarUsuario(string chave);
         Task<bool> reativarUsuario(string chave);

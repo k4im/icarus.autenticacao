@@ -47,7 +47,7 @@ namespace autenticacao.infra.Repository
             }
         }
 
-        public async Task<Response<AppUser>> listarUsuarios(int pagina, float resultado)
+        public async Task<Response<UserDTO>> listarUsuarios(int pagina, float resultado)
         {
             var queryPaginado = "SELECT Id, UserName, Email, FlagDesativado, Valor FROM AspNetUsers LIMIT @resultado OFFSET @pagina";
             var queryTotal = "SELECT COUNT(*) FROM AspNetUsers";
@@ -56,8 +56,8 @@ namespace autenticacao.infra.Repository
             var totalItems = await connection.ExecuteScalarAsync<int>(queryTotal);
             var total = Math.Ceiling(totalItems / resultado);
             var projetosPaginados = await connection
-                .QueryAsync<AppUser>(queryPaginado, new { resultado = resultado, pagina = (pagina - 1) * resultado });
-            return new Response<AppUser>(projetosPaginados.ToList(), pagina, (int)total, totalItems);
+                .QueryAsync<UserDTO>(queryPaginado, new { resultado = resultado, pagina = (pagina - 1) * resultado });
+            return new Response<UserDTO>(projetosPaginados.ToList(), pagina, (int)total, totalItems);
         }
 
 
