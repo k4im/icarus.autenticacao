@@ -90,7 +90,7 @@ namespace autenticacao.service.Controllers
         /// <returns code="401">Informa que não está autorizado para a funcao</returns>
         /// <returns code="403">Informa que não tem privilégios para a funcao</returns>
         [HttpPost("desativar/{chave}")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> desativarUsuario([FromRoute] string chave)
         {
             var currentUser = HttpContext.User.FindFirstValue(ClaimTypes.Name);
@@ -158,7 +158,7 @@ namespace autenticacao.service.Controllers
         /// <returns code="401">Informa que não está autorizado para a funcao</returns>
         /// <returns code="403">Informa que não tem privilégios para a funcao</returns>
         [HttpPost("reativar/{chave}")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> reavitarUsuario([FromRoute] string chave)
         {
             var currentUser = HttpContext.User.FindFirstValue(ClaimTypes.Name);

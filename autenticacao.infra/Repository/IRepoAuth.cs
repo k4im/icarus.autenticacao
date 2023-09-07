@@ -6,7 +6,7 @@ namespace autenticacao.infra.Repository
         Task<ResponseRegistroDTO> registrarUsuario(NovoUsuarioDTO user);
         Task<bool> desativarUsuario(string chave);
         Task<bool> reativarUsuario(string chave);
-        Task<ResponseLoginDTO> logar(LoginDTO loginModel);
+        Task<Object> logar(LoginDTO loginModel);
         Task logOut();
 
     }

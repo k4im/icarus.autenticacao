@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\autenticacao.service.csproj": {}
+    "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj": {}
   },
   "projects": {
-    "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj": {
+    "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj",
+        "projectUniqueName": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj",
         "projectName": "autenticacao.domain",
-        "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj",
-        "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\obj\\",
+        "projectPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj",
+        "packagesPath": "/home/k4im/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/k4im/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -67,21 +67,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj": {
+    "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj",
+        "projectUniqueName": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj",
         "projectName": "autenticacao.infra",
-        "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj",
-        "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\obj\\",
+        "projectPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj",
+        "packagesPath": "/home/k4im/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/k4im/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj": {
-                "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj"
+              "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj": {
+                "projectPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj"
               }
             }
           }
@@ -180,38 +180,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\autenticacao.service.csproj": {
+    "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\autenticacao.service.csproj",
+        "projectUniqueName": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj",
         "projectName": "autenticacao.service",
-        "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\autenticacao.service.csproj",
-        "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\obj\\",
+        "projectPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj",
+        "packagesPath": "/home/k4im/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/k4im/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj": {
-                "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj"
+              "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj": {
+                "projectPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj"
               },
-              "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj": {
-                "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj"
+              "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj": {
+                "projectPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj"
               }
             }
           }
@@ -290,7 +289,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
         }
       }
     }

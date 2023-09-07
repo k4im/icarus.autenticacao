@@ -30,19 +30,34 @@ namespace autenticacao.infra.Repository
             _db = db;
         }
 
-        public async Task<bool> desativarUsuario(string chave)
+        public async Task<bool> reativarUsuario(string chave)
         {
-            var usuario = await _userManager.FindByEmailAsync(chave);
-            if (usuario == null) return false;
-            usuario.desativarUsuario();
             try
             {
-                await _db.SaveChangesAsync();
+                var query = "UPDATE AspNetUsers SET FlagDesativado=0 WHERE Username LIKE @key";
+                using var connection = new MySqlConnection(Connection);
+                var rows = await connection.QueryAsync(query, new { key = chave });
                 return true;
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Console.WriteLine($"Não foi possivel realizar a desativação do usuario [{chave}]: " + e.Message);
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public async Task<bool> desativarUsuario(string chave)
+        {
+            try
+            {
+                var query = "UPDATE AspNetUsers SET FlagDesativado=1 WHERE Username LIKE @key";
+                using var connection = new MySqlConnection(Connection);
+                var rows = await connection.QueryAsync(query, new { key = chave });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
                 return false;
             }
         }
@@ -61,7 +76,7 @@ namespace autenticacao.infra.Repository
         }
 
 
-        public async Task<ResponseLoginDTO> logar(LoginDTO loginModel)
+        public async Task<Object> logar(LoginDTO loginModel)
         {
             var usuario = await _userManager.FindByNameAsync(loginModel.ChaveDeAcesso);
             if (!usuario.FlagDesativado)
@@ -75,49 +90,12 @@ namespace autenticacao.infra.Repository
                     return new ResponseLoginDTO(token, RToken.Token);
                 }
             }
-            return new ResponseLoginDTO("Senha ou usuario invalidos!", "Senha ou usuario invalidos!");
+            return new ResponseFalhaLoginDTO("Senha ou usuario invalidos!");
         }
 
         public async Task logOut()
         {
             await _signInManager.SignOutAsync();
-        }
-
-
-        /*Metodos refatorados, necessário estar realizando testes para validar*/
-        public async Task<bool> DesativarUsuarioRefactory(string chave)
-        {
-            var query = "UPDATE AspNetUsers SET FlagDesativado=true WHERE Username LIKE @key";
-            using var connection = new MySqlConnection(Connection);
-            var rows = await connection.QueryAsync(query, new { key = chave });
-            return rows.Any();
-        }
-
-        public async Task<bool> ReativarUsuarioRefactory(string chave)
-        {
-            var query = "UPDATE AspNetUsers SET FlagDesativado=false WHERE Username LIKE @key";
-            using var connection = new MySqlConnection(Connection);
-            var rows = await connection.QueryAsync(query, new { key = chave });
-            return rows.Any();
-        }
-        /*Final Metodos refatorados, necessário estar realizando testes para validar*/
-
-        public async Task<bool> reativarUsuario(string chave)
-        {
-
-            var usuario = await _userManager.FindByEmailAsync(chave);
-            if (usuario == null) return false;
-            usuario.reativarUsuario();
-            try
-            {
-                await _db.SaveChangesAsync();
-                return true;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine($"Não foi possivel realizar a reativação do usuario [{chave}]: " + e.Message);
-                return false;
-            }
         }
 
         public async Task<ResponseRegistroDTO> registrarUsuario(NovoUsuarioDTO user)
