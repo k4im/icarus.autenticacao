@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BRqNxkRf01ZHOWIlnTy9m3fh3ZueJnlEDEcKabRHuECoAzOhpl1eJfdD3F2ZqNRYN6DF6rwB6RXfHTH31r+tjA==",
+  "dgSpecHash": "lxIet3SPHrEpuzQ/Kd9ddS3gbVrUM3pKM87BdjoxGJdVQ3SK84ibTTINi97mu91nf4R0q2uOmogqwi2YprV9rA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj",
+  "projectFilePath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\santo\\.nuget\\packages\\dapper\\2.0.151\\dapper.2.0.151.nupkg.sha512",
     "C:\\Users\\santo\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",

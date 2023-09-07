@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KmyOq+wcyjPg+SdIIGga5ynM3Qr9ukvBUDGVf/2uP/dfZ0buAJ6KQZEwHCs7CcHqaXY2mHURHQ1F6Hu2ViQKXQ==",
+  "dgSpecHash": "qnPVx0w82HixGTy/QwlxIuOtItJpVwz1GAJ2xoTBpdkLNk/yxv7gVTAe7U1WPUf/J/dm4y2SzSeccdxvdSnjeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\autenticacao.service.csproj",
+  "projectFilePath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\autenticacao.service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\santo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\santo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

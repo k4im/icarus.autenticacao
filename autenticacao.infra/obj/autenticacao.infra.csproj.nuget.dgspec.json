@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj": {}
+    "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj": {
+    "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj",
+        "projectUniqueName": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj",
         "projectName": "autenticacao.domain",
-        "projectPath": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj",
+        "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj",
         "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\obj\\",
+        "outputPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj": {
+    "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj",
+        "projectUniqueName": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj",
         "projectName": "autenticacao.infra",
-        "projectPath": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj",
+        "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj",
         "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\obj\\",
+        "outputPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj": {
-                "projectPath": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj"
+              "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj": {
+                "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj"
               }
             }
           }

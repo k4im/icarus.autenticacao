@@ -4478,11 +4478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\autenticacao.service.csproj",
+      "projectUniqueName": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\autenticacao.service.csproj",
       "projectName": "autenticacao.service",
-      "projectPath": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\autenticacao.service.csproj",
+      "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\autenticacao.service.csproj",
       "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\obj\\",
+      "outputPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -4498,8 +4498,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj": {
-              "projectPath": "C:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj"
+            "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj": {
+              "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.domain\\autenticacao.domain.csproj"
             },
             "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj": {
               "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.autenticacao\\autenticacao.infra\\autenticacao.infra.csproj"
