@@ -37,21 +37,20 @@ namespace autenticacao.infra.Repository
             usuario.desativarUsuario();
             try
             {
-
                 await _db.SaveChangesAsync();
                 return true;
-
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Console.WriteLine($"Não foi possivel realizar a desativação do usuario [{chave}]: " + e.Message);
                 return false;
             }
         }
 
         public async Task<Response<AppUser>> listarUsuarios(int pagina, float resultado)
         {
-            var queryPaginado = "SELECT Id, Nome, Status, DataInicio, DataEntrega, Valor FROM Projetos LIMIT @resultado OFFSET @pagina";
-            var queryTotal = "SELECT COUNT(*) FROM Projetos";
+            var queryPaginado = "SELECT Id, UserName, Email, FlagDesativado, Valor FROM AspNetUsers LIMIT @resultado OFFSET @pagina";
+            var queryTotal = "SELECT COUNT(*) FROM AspNetUsers";
 
             using var connection = new MySqlConnection(Connection);
             var totalItems = await connection.ExecuteScalarAsync<int>(queryTotal);
@@ -94,8 +93,9 @@ namespace autenticacao.infra.Repository
                 await _db.SaveChangesAsync();
                 return true;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Console.WriteLine($"Não foi possivel realizar a reativação do usuario [{chave}]: " + e.Message);
                 return false;
             }
         }
@@ -118,7 +118,7 @@ namespace autenticacao.infra.Repository
                 await criarRoles();
                 var appRole = await _roleManager.FindByNameAsync(NovoUsuario.Role);
                 await _userManager.SetLockoutEnabledAsync(NovoUsuario, false);
-                await _userManager.AddToRoleAsync(NovoUsuario, "ADMIN");
+                await _userManager.AddToRoleAsync(NovoUsuario, NovoUsuario.Role);
             }
             if (!result.Succeeded && result.Errors.Count() > 0)
             {
