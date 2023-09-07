@@ -83,8 +83,28 @@ namespace autenticacao.infra.Repository
             await _signInManager.SignOutAsync();
         }
 
+
+        /*Metodos refatorados, necessário estar realizando testes para validar*/
+        public async Task<bool> DesativarUsuarioRefactory(string chave)
+        {
+            var query = "UPDATE AspNetUsers SET FlagDesativado=true WHERE Username LIKE @key";
+            using var connection = new MySqlConnection(Connection);
+            var rows = await connection.QueryAsync(query, new { key = chave });
+            return rows.Any();
+        }
+
+        public async Task<bool> ReativarUsuarioRefactory(string chave)
+        {
+            var query = "UPDATE AspNetUsers SET FlagDesativado=false WHERE Username LIKE @key";
+            using var connection = new MySqlConnection(Connection);
+            var rows = await connection.QueryAsync(query, new { key = chave });
+            return rows.Any();
+        }
+        /*Final Metodos refatorados, necessário estar realizando testes para validar*/
+
         public async Task<bool> reativarUsuario(string chave)
         {
+
             var usuario = await _userManager.FindByEmailAsync(chave);
             if (usuario == null) return false;
             usuario.reativarUsuario();
