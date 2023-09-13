@@ -475,7 +475,6 @@
 /home/joao/github/icarus.autenticacao/autenticacao.service/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
 /home/joao/github/icarus.autenticacao/autenticacao.service/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
 /home/joao/github/icarus.autenticacao/autenticacao.service/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
-/home/joao/github/icarus.autenticacao/autenticacao.service/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.InMemory.dll
 /home/joao/github/icarus.autenticacao/autenticacao.service/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
 /home/joao/github/icarus.autenticacao/autenticacao.service/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
 /home/joao/github/icarus.autenticacao/autenticacao.service/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll

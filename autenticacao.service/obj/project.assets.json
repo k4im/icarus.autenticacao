@@ -4473,19 +4473,19 @@
     ]
   },
   "packageFolders": {
-    "/home/k4im/.nuget/packages/": {}
+    "/home/joao/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj",
+      "projectUniqueName": "/home/joao/github/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj",
       "projectName": "autenticacao.service",
-      "projectPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj",
-      "packagesPath": "/home/k4im/.nuget/packages/",
-      "outputPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.service/obj/",
+      "projectPath": "/home/joao/github/icarus.autenticacao/autenticacao.service/autenticacao.service.csproj",
+      "packagesPath": "/home/joao/.nuget/packages/",
+      "outputPath": "/home/joao/github/icarus.autenticacao/autenticacao.service/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/k4im/.nuget/NuGet/NuGet.Config"
+        "/home/joao/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -4497,11 +4497,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj": {
-              "projectPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj"
+            "/home/joao/github/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj": {
+              "projectPath": "/home/joao/github/icarus.autenticacao/autenticacao.domain/autenticacao.domain.csproj"
             },
-            "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj": {
-              "projectPath": "/mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj"
+            "/home/joao/github/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj": {
+              "projectPath": "/home/joao/github/icarus.autenticacao/autenticacao.infra/autenticacao.infra.csproj"
             }
           }
         }

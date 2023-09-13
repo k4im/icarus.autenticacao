@@ -45,3 +45,5 @@
 /mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/autenticacao.infra.pdb
 /mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/autenticacao.infra.genruntimeconfig.cache
 /mnt/c/Users/santo/github/icarus-sistema/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/ref/autenticacao.infra.dll
+/home/joao/github/icarus.autenticacao/autenticacao.infra/bin/Debug/net7.0/autenticacao.infra.runtimeconfig.json
+/home/joao/github/icarus.autenticacao/autenticacao.infra/obj/Debug/net7.0/autenticacao.infra.genruntimeconfig.cache
