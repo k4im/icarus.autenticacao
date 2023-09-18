@@ -79,5 +79,14 @@
             <returns code="401">Informa que não está autorizado para a funcao</returns>
             <returns code="403">Informa que não tem privilégios para a funcao</returns>
         </member>
+        <member name="M:autenticacao.service.Controllers.UsuarioController.RefreshToken(System.String,System.String)">
+            <summary>
+            Ira realizar a operação de atualizar o token de acesso
+            </summary>
+            <returns code="200">Retorna o novo token de acesso</returns>
+            <returns code="500">Informa que não foi possivel realizar a operação</returns>
+            <returns code="401">Informa que não está autorizado para a funcao</returns>
+            <returns code="403">Informa que não tem privilégios para a funcao</returns>
+        </member>
     </members>
 </doc>

@@ -177,15 +177,15 @@ namespace autenticacao.service.Controllers
         /// <returns code="500">Informa que não foi possivel realizar a operação</returns>
         /// <returns code="401">Informa que não está autorizado para a funcao</returns>
         /// <returns code="403">Informa que não tem privilégios para a funcao</returns>
-        [HttpPost("reativar/{chave}")]
+        [HttpPost("refreshtoken")]
         [Authorize(Roles = "ADMIN")]
-        public async Task<IActionResult> RefreshToken([FromRoute] string chave)
+        public async Task<IActionResult> RefreshToken([FromQuery] string chave, [FromQuery] string Token)
         {
             var currentUser = HttpContext.User.FindFirstValue(ClaimTypes.Name);
-            var result = await _repoAuth.reativarUsuario(chave);
-            if (result)
+            var result = await _repoAuth.RefreshAccessToken(chave, Token);
+            if (result != null)
             {
-                return StatusCode(200, "Usuario reativado com sucesso!");
+                return StatusCode(200, result);
             }
             return StatusCode(500, "Não foi possivel desativar o usuario");
         }
