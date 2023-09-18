@@ -136,5 +136,17 @@ namespace autenticacao.infra.Repository
                 await _roleManager.CreateAsync(new IdentityRole("FINANCEIRO"));
             }
         }
+
+        public async Task<object> RefreshAccessToken(string chave, string TokenDeRefresh)
+        {
+            var Rtoken = await _refreshManager.BuscarRefreshToken(chave, TokenDeRefresh); 
+            if(Rtoken != null && Rtoken.DataDeExpiracao < DateTime.Now) {
+                var NovoAccessToken = await _jwtManager.criarAccessToken(chave);
+                var NovoTokenRefresh = _refreshManager.GerarRefreshToken(chave);
+                await _refreshManager.SalvarRefreshToken(NovoTokenRefresh);
+                return new ResponseLoginDTO(NovoAccessToken, NovoTokenRefresh.Token);
+            }
+            return null;
+        }
     }
 }

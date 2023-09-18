@@ -57,7 +57,7 @@ namespace autenticacao.infra.RefreshToken
                 {
                     Usuario = request.Usuario,
                     DataCriacao = request.DataDeCriacao,
-                    DataExpiracao = request.DataDeExpiracao,
+                    DataExpiracao = request.DataDeExpiracao.AddMinutes(30),
                     RToken = request.Token
                 };
                 try
