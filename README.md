@@ -82,7 +82,7 @@ Está trata-se da api utilizada para autenticação dos usuarios no projeto dist
 Para rodar este projeto utilizando dotnet realize os seguintes comandos:
 
 ```bash
-  cd ~/icarus-autenticação
+  cd ~/icarus.autenticação
 ```
 
 ```bash
@@ -90,7 +90,7 @@ Para rodar este projeto utilizando dotnet realize os seguintes comandos:
 ```
 
 ```bash
-  cd estoque.service/
+  cd autenticacao.service/
 ```
 
 ```bash
