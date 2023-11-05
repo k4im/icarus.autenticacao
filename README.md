@@ -1,12 +1,8 @@
 # API voltada para autenticação do projeto Icarus.
 Está trata-se da api utilizada para autenticação dos usuarios no projeto distribuido chamado **Icarus**.
 
-
-
 ## Tecnologias utilizadas no projeto.
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![RabbitMQ](https://img.shields.io/badge/Rabbitmq-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
-
-
 
 ## Endpoint para autenticação
 
@@ -39,6 +35,7 @@ Está trata-se da api utilizada para autenticação dos usuarios no projeto dist
 | :-------- | :------- | :-------------------------------- |
 | `Authorization`      | `Authorization` |**Autenticação**. Jwt token |
 
+![FluxogramaAutenticacao-Etapa de registro drawio](https://github.com/k4im/icarus.autenticacao/assets/108486349/ffca5e05-b4d5-4c42-87ff-3d89dd3c5df2)
 
 
 
@@ -56,6 +53,8 @@ Está trata-se da api utilizada para autenticação dos usuarios no projeto dist
 | :-------- | :------- | :------------------------- |
 | `Chave` | `string` | Chave para desativar usuario. |
 
+![FluxogramaAutenticacao-Desativar usuario drawio(1)](https://github.com/k4im/icarus.autenticacao/assets/108486349/f609b0fb-bee4-4462-84ae-106409a01be5)
+
 
 #### Reativar usuario.
 
@@ -71,11 +70,16 @@ Está trata-se da api utilizada para autenticação dos usuarios no projeto dist
 | :-------- | :------- | :------------------------- |
 | `Chave` | `string` | Chave para reavitar usuario. |
 
+![FluxogramaAutenticacao-Ativar usuario drawio](https://github.com/k4im/icarus.autenticacao/assets/108486349/db836ebe-898d-4232-96df-25045747b7e3)
+
+
 #### Login.
 
 ```http
   POST api/usuarios/login
 ```
+
+![FluxogramaAutenticacao-Etapa de login drawio](https://github.com/k4im/icarus.autenticacao/assets/108486349/66c68b29-5b6e-4dd0-9512-cd6286d3eb31)
 
 ## Environment Variables
 
