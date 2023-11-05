@@ -77,6 +77,19 @@ Está trata-se da api utilizada para autenticação dos usuarios no projeto dist
   POST api/usuarios/login
 ```
 
+## Environment Variables
+
+Realizei uma verificação referente as variaveis de ambiente configuraveis.
+
+
+`ASPNETCORE_ENVIRONMENT`
+
+`DB_CONNECTION`
+
+
+#### DB_CONNECTION
+* Variavel responsavel por estar realizando a configuração de conexão com o banco de dados. A mesma pode ser configuravel através dos arquivos de configurações assim como repassando por argumentos na execução docker.
+  
 ## Deployment dotnet
 
 Para rodar este projeto utilizando dotnet realize os seguintes comandos:
