@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-05T16:16:21.298Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0" etag="2QBGDmjQB6AOnoJ_CJrU" version="22.0.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-11-05T16:16:36.751Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0" etag="31_Absnqd0rB_f-Id406" version="22.0.8" type="github" pages="2">
   <diagram id="pkuDshEJCpguCAmV00El" name="Etapa de registro">
     <mxGraphModel dx="4540" dy="1873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -117,7 +117,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Etapa de login">
-    <mxGraphModel dx="11967" dy="5620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4010" dy="1606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -125,7 +125,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9r0k2Mav32ihApzvO4Dh-1" value="POST de login." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-56" y="460" width="120" height="60" as="geometry" />
+          <mxGeometry x="-56" y="320" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9r0k2Mav32ihApzvO4Dh-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9r0k2Mav32ihApzvO4Dh-2" target="9r0k2Mav32ihApzvO4Dh-3">
           <mxGeometry relative="1" as="geometry" />
@@ -161,7 +161,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9r0k2Mav32ihApzvO4Dh-11" value="&lt;div&gt;Buscar usuário a partir de chave de acesso.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-56" y="570" width="120" height="60" as="geometry" />
+          <mxGeometry x="-56" y="500" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9r0k2Mav32ihApzvO4Dh-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9r0k2Mav32ihApzvO4Dh-14" target="9r0k2Mav32ihApzvO4Dh-2">
           <mxGeometry relative="1" as="geometry" />
